@@ -16,11 +16,11 @@ body{
 }
 
 .container{
-    height: 100vh; 
+    height: 100vh;
+}
 
-    .principal{
-        background-image: url('../img/Background.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+.principal{
+    background-image: url("/img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }

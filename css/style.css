@@ -18,8 +18,9 @@ body {
 .container {
   height: 100vh;
 }
-.container .principal {
-  background-image: url("../img/Background.png");
+
+.principal {
+  background-image: url("/img/Background.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
