@@ -45,10 +45,9 @@ body{
         display: block;
         text-decoration: none;
         margin-bottom: 1em;
-
     }
     
-    .secundario{
+    .segundo{
         background-color: transparent;
         border: 2px solid var(--branco-principal);
     }
@@ -61,10 +60,37 @@ body{
     &__imagem{
         @include margin-padrao;
     }
+
 }
 
 .principal{
     background-image: url("/img/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+
+    &__imagem{
+        width: 80%;
+    }
+
+    .descricao{
+        &__titulo{
+            font-weight: 700;
+            font-size: 48px;
+            color: var(--branco-principal);
+            margin-bottom: 0.1em;
+        }
+
+        &__texto{
+            color: var(--cinza-secundario);
+        }
+    }
+
+
 }

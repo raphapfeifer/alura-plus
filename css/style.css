@@ -40,7 +40,7 @@ body {
   text-decoration: none;
   margin-bottom: 1em;
 }
-.container .secundario {
+.container .segundo {
   background-color: transparent;
   border: 2px solid var(--branco-principal);
 }
@@ -56,6 +56,25 @@ body {
   background-image: url("/img/Background.png");
   background-repeat: no-repeat;
   background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+.secundario__imagem {
+  width: 80%;
+}
+.secundario .descricao__titulo {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--branco-principal);
+  margin-bottom: 0.1em;
+}
+.secundario .descricao__texto {
+  color: var(--cinza-secundario);
 }
 
 /*# sourceMappingURL=style.css.map */
