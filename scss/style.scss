@@ -61,6 +61,10 @@ body{
         @include margin-padrao;
     }
 
+    &__descricao{
+        padding: 2em;
+    }
+
 }
 
 .principal{
@@ -77,6 +81,11 @@ body{
 
     &__imagem{
         width: 80%;
+    }
+
+    &__botao{
+        display: inline-block;
+        margin-top: 1em;
     }
 
     .descricao{
