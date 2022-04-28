@@ -6,6 +6,8 @@
     --font-principal: 'Inter';
 }
 
+$titulo-size: 48px;
+
 @mixin margin-padrao{
     margin: 1em 0 2em 0;
 }
@@ -91,7 +93,7 @@ body{
     .descricao{
         &__titulo{
             font-weight: 700;
-            font-size: 48px;
+            font-size: $titulo-size;
             color: var(--branco-principal);
             margin-bottom: 0.1em;
         }
@@ -101,5 +103,24 @@ body{
         }
     }
 
+}
 
+.dispositivos{
+    text-align: center;
+
+    &__titulo{
+        font-size: $titulo-size;
+        color: var(--branco-principal);
+    }
+
+    &__lista{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 5em 0;
+
+        &__item{
+            font-size: 32px;
+        }
+    }
 }
