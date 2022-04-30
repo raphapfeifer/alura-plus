@@ -8,6 +8,9 @@
 
 $titulo-size: 48px;
 
+%no-decoration{text-decoration: none;}
+%no-list-style{list-style-type: none;}
+
 @mixin margin-padrao{
     margin: 1em 0 2em 0;
 }
@@ -116,11 +119,39 @@ body{
     &__lista{
         display: flex;
         justify-content: center;
-        list-style-type: none;
+        @extend %no-list-style;
         margin: 5em 0;
 
         &__item{
             font-size: 32px;
         }
+    }
+}
+
+.rodape{  
+    text-align: center;
+    margin: 5em 3em;
+
+    &__lista{
+        display: flex;
+        @extend %no-list-style;
+        justify-content: center;
+        margin-top: 1em;
+        
+        .lista{
+            &__link a{
+                font-size: 16px;
+                color: var(--branco-principal);
+                @extend %no-decoration;
+                margin-left: 1em;
+            }
+        }
+        
+    }
+
+    &__texto{
+        margin: 1em 0;
+        color: var(--cinza-secundario);
+        font-size: 14px;
     }
 }
