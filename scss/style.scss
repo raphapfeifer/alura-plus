@@ -4,9 +4,11 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --font-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
 }
 
 $titulo-size: 48px;
+$purple: #A050BE;
 
 %no-decoration{text-decoration: none;}
 %no-list-style{list-style-type: none;}
@@ -50,11 +52,21 @@ body{
         display: block;
         text-decoration: none;
         margin-bottom: 1em;
+
+        &:hover{
+            background-color: var(--botao-azul-efeito);
+            color: var(--cor-de-fundo);
+        }
     }
     
     .segundo{
         background-color: transparent;
         border: 2px solid var(--branco-principal);
+
+        &:hover{
+            background-color: var(--botao-azul-efeito);
+            color: var(--cor-de-fundo);
+        }
     }
 
     &__aviso{
@@ -144,6 +156,14 @@ body{
                 color: var(--branco-principal);
                 @extend %no-decoration;
                 margin-left: 1em;
+
+                &:hover{
+                    color: var(--botao-azul);
+                }
+
+                &:active{
+                    color: $purple;
+                }
             }
         }
         

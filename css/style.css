@@ -4,6 +4,7 @@
   --botao-azul: #167BF7;
   --cor-de-fundo: #00030C;
   --font-principal: "Inter";
+  --botao-azul-efeito: #3c92fa;
 }
 
 .rodape__lista .lista__link a {
@@ -48,9 +49,17 @@ body {
   text-decoration: none;
   margin-bottom: 1em;
 }
+.container__botao:hover {
+  background-color: var(--botao-azul-efeito);
+  color: var(--cor-de-fundo);
+}
 .container .segundo {
   background-color: transparent;
   border: 2px solid var(--branco-principal);
+}
+.container .segundo:hover {
+  background-color: var(--botao-azul-efeito);
+  color: var(--cor-de-fundo);
 }
 .container__aviso {
   font-size: 12px;
@@ -121,6 +130,12 @@ body {
   font-size: 16px;
   color: var(--branco-principal);
   margin-left: 1em;
+}
+.rodape__lista .lista__link a:hover {
+  color: var(--botao-azul);
+}
+.rodape__lista .lista__link a:active {
+  color: #A050BE;
 }
 .rodape__texto {
   margin: 1em 0;
